@@ -1,0 +1,55 @@
+.curved-container {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .line {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .square-center {
+    position: absolute;
+    top: 35%;
+    left: 37%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 10px solid #ecebeb85;
+    z-index: 10;
+    border-radius: 10px;
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .square-content {
+    text-align: center;
+  }
+  
+  .square-content h2 {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .square-content p {
+    font-size: 12px;
+    margin: 5px 0 0;
+  }
+  .line path {
+    animation: glow-animation 2s infinite alternate;
+  }
+  
+  @keyframes glow-animation {
+    0% {
+      stroke-width: 5;
+    }
+    100% {
+      stroke-width: 8;
+    }
+  }
