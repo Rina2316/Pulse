@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import Section from "../components/Section/Section";
@@ -8,55 +8,41 @@ import AnimatedBarOne from '../components/AnimatedBars/AnimatedBarOne/AnimatedBa
 import AnimatedBarTwo from '../components/AnimatedBars/AnimatedBarTwo/AnimatedBarTwo';
 import AnimatedBarThree from '../components/AnimatedBars/AnimatedBarThree/AnimatedBarThree';
 import "./HomePage.css";
+
 export default function HomePage() {
-    const sections = [
-        {
-          id: "section1",
-          content: (
-          <AnimatedBarOne/>
-          ),
-        },
-        {
-          id: "section2",
-          content: (
-          <AnimatedBarTwo/>
-          ),
-        },
-        {
-          id: "section3",
-          content: (
-         <AnimatedBarThree/>
-          ),
-        },
-      ];
+    const sections = useMemo(() => [
+        { id: "section1", content: <AnimatedBarOne /> },
+        { id: "section2", content: <AnimatedBarTwo /> },
+        { id: "section3", content: <AnimatedBarThree /> },
+    ], []);
+
     return (
         <div className='mainWrapper'>
             <Header />
-             <Hero />
-             <ContentSwitcher sections={sections} />
-         
-             <div className="sections-container">     
-      <Section
-        id="section1"
-        title="Innovation in financial technology"
-        description="Explore the latest trends in fintech, digital banking and blockchain that are changing the future of finance."
-        buttonText="Learn More"
-      />
-      <Section
-        id="section2"
-        title="Individual financial solutions"
-        description="We create financial instruments tailored to your needs - from lending to investment strategies."
-        buttonText="Explore"
-      />
-      <Section
-        id="section3"
-        title="The future of finance is in your hands"
-        description="Be part of the digital revolution - invest, manage finances and create wealth."
-        buttonText="Join Now"
-      />
-      </div>
-     
-            <Footer />  
+            <Hero />
+            <ContentSwitcher sections={sections} />
+
+            <div className="sections-container">     
+                {sections.map(({ id }) => (
+                    <Section
+                        key={id}
+                        id={id}
+                        title={
+                            id === "section1" ? "Innovation in financial technology"
+                            : id === "section2" ? "Individual financial solutions"
+                            : "The future of finance is in your hands"
+                        }
+                        description={
+                            id === "section1" ? "Explore the latest trends in fintech, digital banking and blockchain that are changing the future of finance."
+                            : id === "section2" ? "We create financial instruments tailored to your needs - from lending to investment strategies."
+                            : "Be part of the digital revolution - invest, manage finances and create wealth."
+                        }
+                        buttonText={id === "section1" ? "Learn More" : id === "section2" ? "Explore" : "Join Now"}
+                    />
+                ))}
+            </div>
+
+            <Footer />
         </div>
     );
 }

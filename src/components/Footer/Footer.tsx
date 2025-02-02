@@ -1,42 +1,41 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { motion } from "framer-motion";
-import "./Footer.css";
+import styles from "./Footer.module.css"; // Импортируем как объект
 
 export default function Footer() {
+  const fadeInAnimation = useMemo(() => ({
+    initial: { opacity: 0 },
+    animate: { opacity: 1 },
+    transition: { duration: 0.5 },
+  }), []);
+
   return (
-    <div className="footer-wrapper">
-      <motion.footer
-        className="footer"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="footer-background">
-          <div className="wave"></div>
-          <div className="wave wave2"></div>
-          <div className="wave wave3"></div>
-          <div className="wave wave4"></div>
-          <div className="wave wave5"></div>
-          <div className="wave wave6"></div>
+    <div className={styles.footerWrapper}>
+      <motion.footer className={styles.footer} {...fadeInAnimation}>
+        <div className={styles.footerBackground}>
+          {[...Array(6)].map((_, i) => (
+            <div key={i} className={`${styles.wave} ${styles[`wave${i + 1}`]}`}></div>
+          ))}
         </div>
-          <motion.div
-            className="footerLogo"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            whileHover={{ scale: 1.15 }}
-          >
-            Pulse
-          </motion.div>
-          <motion.div
-            className="footerSlogan"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          
-          >
-            Finance at Your Fingertips
-          </motion.div>
+
+        <motion.div
+          className={styles.footerLogo}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          whileHover={{ scale: 1.15 }}
+        >
+          Pulse
+        </motion.div>
+
+        <motion.div
+          className={styles.footerSlogan}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          Finance at Your Fingertips
+        </motion.div>
       </motion.footer>
     </div>
   );

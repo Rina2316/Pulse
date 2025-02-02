@@ -106,9 +106,8 @@ const AnimatedBarThree: React.FC = () => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{
-          duration: 1.5,
+          duration: 0.7,
           ease: "easeInOut",
-          delay: 1,
         }}
       >
                 <img src="/icons/comunity.jpg"   alt="Card" width={200} height={200} />

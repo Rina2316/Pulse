@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import "./Section.css";
 
@@ -20,21 +20,17 @@ const Section: React.FC<SectionWithTextProps> = ({
   onButtonClick,
 }) => {
   const [hovered, setHovered] = useState(false);
+  const [currentGradient, setCurrentGradient] = useState(0);
 
-  
   const gradients = [
     "linear-gradient(90deg, #8a2be2, #ff7e5f)",
     "linear-gradient(90deg, #ff7e5f, #8a2be2)",
     "linear-gradient(90deg, #8a2be2, #9954da)",
   ];
 
-  
-  const [currentGradient, setCurrentGradient] = useState(0);
-
-  
-  const handleAnimationComplete = () => {
+  const handleAnimationComplete = useCallback(() => {
     setCurrentGradient((prev) => (prev + 1) % gradients.length);
-  };
+  }, []);
 
   return (
     <motion.section
@@ -71,19 +67,12 @@ const Section: React.FC<SectionWithTextProps> = ({
           >
             <motion.button
               className="animated-button"
-              style={{
-                background: gradients[currentGradient],
-              }}
+              style={{ background: gradients[currentGradient] }}
               whileHover={{ scale: 1.15, boxShadow: "0px 8px 20px rgba(0, 0, 0, 0.3)" }}
               whileTap={{ scale: 0.95 }}
-              transition={{
-                type: "spring",
-                stiffness: 300,
-                damping: 20,
-                duration: 0.8,
-              }}
+              transition={{ type: "spring", stiffness: 300, damping: 20, duration: 0.8 }}
               onClick={onButtonClick}
-              onAnimationComplete={handleAnimationComplete} 
+              onAnimationComplete={handleAnimationComplete}
             >
               {buttonText}
             </motion.button>
