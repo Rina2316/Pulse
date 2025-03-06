@@ -2,14 +2,14 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import "./AnimatedBarThree.css";
+import styles from "./AnimatedBarThree.module.css";
 
 const AnimatedBarThree: React.FC = () => {
   return (
-    <div className="curved-container">
+    <div className={styles.curvedContainer} >
   
       <motion.svg
-        className="line"
+      className={styles.line} 
         width="600"
         height="400"
         viewBox="0 0 600 300"
@@ -59,7 +59,7 @@ const AnimatedBarThree: React.FC = () => {
       </motion.svg>
 
       <motion.svg
-        className="line"
+      className={styles.line} 
         width="600"
         height="400"
         viewBox="0 0 600 300"
@@ -102,7 +102,8 @@ const AnimatedBarThree: React.FC = () => {
       </motion.svg>
 
       <motion.div
-        className="square-center"
+      
+      className={styles.squareCenter} 
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{

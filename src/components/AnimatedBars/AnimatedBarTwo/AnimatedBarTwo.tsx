@@ -2,7 +2,7 @@
 
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
-import "./AnimatedBT.css";
+import styles from "./AnimatedBT.module.css";
 
 const AnimatedBarTwo: React.FC = () => {
   const pathAnimation = useMemo(() => ({
@@ -18,8 +18,8 @@ const AnimatedBarTwo: React.FC = () => {
   }), []);
 
   return (
-    <div className="curved-container">
-      <motion.svg className="line" width="500" height="200" viewBox="0 0 500 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div className={styles.curvedContainer}>
+      <motion.svg className={styles.line} width="500" height="200" viewBox="0 0 500 200" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#54a0ff">
@@ -54,7 +54,7 @@ const AnimatedBarTwo: React.FC = () => {
         <motion.path d="M500 200 Q250 100 0 200" stroke="url(#gradient2)" strokeWidth="5" fill="transparent" style={{ filter: "url(#glow)" }} {...pathAnimation} />
       </motion.svg>
 
-      <motion.div className="square" {...scaleAnimation}>
+      <motion.div className={styles.square} {...scaleAnimation}>
         <img src="/icons/graphic.jpg" alt="Card" width={200} height={200} />
       </motion.div>
     </div>

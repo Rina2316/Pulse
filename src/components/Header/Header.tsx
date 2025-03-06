@@ -168,7 +168,7 @@ export default function Header() {
                   <form>
                     <input type="text" placeholder="Username" />
                     <input type="password" placeholder="Password" />
-                    <p className="demo-info">This is a demo version. No data will be saved.</p>
+                    <p className="demo-info">This is a demo version</p>
                     <button type="submit">Login</button>
                   </form>
                 </>
@@ -179,7 +179,7 @@ export default function Header() {
                     <input type="text" placeholder="Username" />
                     <input type="email" placeholder="Email" />
                     <input type="password" placeholder="Password" />
-                    <p className="demo-info">This is a demo version. No data will be saved.</p>
+                    <p className="demo-info">This is a demo version</p>
                     <button type="submit">Sign Up</button>
                   </form>
                 </>

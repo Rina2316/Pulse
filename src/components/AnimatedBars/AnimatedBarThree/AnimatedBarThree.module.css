@@ -1,4 +1,4 @@
-.curved-container {
+.curvedContainer {
   position: relative;
   width: 100%;
   height: 30rem;
@@ -13,7 +13,7 @@
     z-index: 1;
   }
   
-  .square-center {
+  .squareCenter {
     position: absolute;
     top: 35%;
     left: 37%;
@@ -28,16 +28,16 @@
   box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
   }
   
-  .square-content {
+  .squareContent {
     text-align: center;
   }
   
-  .square-content h2 {
+  .squareContent h2 {
     font-size: 16px;
     margin: 0;
   }
   
-  .square-content p {
+  .squareContent p {
     font-size: 12px;
     margin: 5px 0 0;
   }

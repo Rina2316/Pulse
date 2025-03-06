@@ -75,7 +75,7 @@
     top: calc(100% + 10px);
     left: 0;
     list-style: none;
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.945);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 12px;
@@ -99,7 +99,7 @@
     cursor: pointer;
     font-size: 18px;
     font-weight: 500;
-    color: #f0f0f0; 
+    color: #8a2be2;
     transition: background-color 0.3s ease, color 0.3s ease;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   }

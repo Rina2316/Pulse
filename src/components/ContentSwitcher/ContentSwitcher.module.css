@@ -1,0 +1,28 @@
+.switcher {
+  position: fixed;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  pointer-events: none; 
+}
+
+.switcherContent {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  
+}
+
+.switcher.hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none; 
+}

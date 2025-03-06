@@ -1,58 +1,57 @@
 .section {
-    display: flex;
-    align-items: center;
-     position: relative;
-     padding-left: 143px;
-    width:40rem;
-    height: 40rem;
-  }
-  
-  .section-border {
-    width: 10px;
-    background: linear-gradient(90deg, #9a5ad6, #8b33dd, #7c15dd);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
-    height: 100%;
-    margin-right: 3rem;
-  }
-  
-  .section-content {
-    display: flex;
-    flex-direction: column;
-   
-  }
-  
-  .section-title {
-    font-size: 4.5rem;
-  line-height: 5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  background: linear-gradient(90deg, #9a5ad6, #8b33dd, #7c15dd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
-  animation: gradientShift 5s ease infinite;
-  }
-  
-  .section-description {
-    font-size: 1.5rem;
-  
-    line-height: 2.3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  background: linear-gradient(90deg, #9a5ad6, #8b33dd, #7c15dd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientShift 5s ease infinite;
-  }
-  
- 
-.animated-button {
-  border: none;
-  padding: 12px 30px;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #fff;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+   position: relative;
+   padding-left: 143px;
+  width:40rem;
+  height: 40rem;
 }
-  
+
+.section-border {
+  width: 10px;
+  background: linear-gradient(90deg, #9a5ad6, #8b33dd, #7c15dd);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  height: 100%;
+  margin-right: 3rem;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.section-title {
+  font-size: 4.5rem;
+line-height: 5rem;
+font-weight: bold;
+margin-bottom: 20px;
+background: linear-gradient(90deg, #9a5ad6, #8b33dd, #7c15dd);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+animation: gradientShift 5s ease infinite;
+}
+
+.section-description {
+  font-size: 1.5rem;
+
+  line-height: 2.3rem;
+font-weight: bold;
+margin-bottom: 20px;
+background: linear-gradient(90deg, #9a5ad6, #8b33dd, #7c15dd);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: gradientShift 5s ease infinite;
+}
+
+
+.animated-button {
+border: none;
+padding: 12px 30px;
+border-radius: 12px;
+font-size: 1.1rem;
+font-weight: bold;
+color: #fff;
+cursor: pointer;
+}
