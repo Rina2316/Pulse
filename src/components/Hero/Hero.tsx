@@ -8,7 +8,7 @@ export default function Hero() {
 
   const gradients = [
     "linear-gradient(90deg, #8a2be2, #ff7e5f)",
-    "linear-gradient(90deg, #ff7e5f, #8a2be2)",
+    "linear-gradient(90deg, #8a2be2, #8a2be2)",
     "linear-gradient(90deg, #8a2be2, #9954da)",
   ];
 

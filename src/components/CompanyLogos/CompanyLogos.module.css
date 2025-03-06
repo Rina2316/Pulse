@@ -1,0 +1,37 @@
+.logoSection {
+    text-align: center;
+    padding: 60px ;
+    margin-bottom: 15rem;
+  }
+  
+  .logoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+  
+  .logoItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .logoItem img {
+    max-width: 10rem;
+    max-height: 10rem;
+    object-fit: contain;
+  }
+  
+  .description {
+    max-width: 700px;
+    margin: 7rem auto 0;
+    font-size: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  

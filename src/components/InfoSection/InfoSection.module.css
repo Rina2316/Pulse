@@ -1,0 +1,72 @@
+.info-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60rem;
+    padding: 6rem 0 5rem 9.4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.info-container {
+    z-index: 1;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 4.5rem;
+    line-height: 5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #9a5ad6, #8b33dd, #7c15dd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    animation: gradientShift 5s ease infinite;
+}
+
+.info-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0d4ff;
+    opacity: 0.9;
+}
+
+.stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #9a5ad6, #8b33dd, #7c15dd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    animation: gradientShift 5s ease infinite;
+}
+
+.stat-text {
+    font-size: 1rem;
+    color: #e0d4ff;
+    opacity: 0.8;
+}
+
+.planet-container {
+    position: absolute;
+    bottom: -6rem;
+    right: -17rem;
+    transform: scale(1.1);
+    z-index: 0;
+    opacity: 0.9;
+}

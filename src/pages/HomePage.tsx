@@ -7,6 +7,8 @@ import ContentSwitcher from '../components/ContentSwitcher/ContentSwitcher';
 import AnimatedBarOne from '../components/AnimatedBars/AnimatedBarOne/AnimatedBarOne';
 import AnimatedBarTwo from '../components/AnimatedBars/AnimatedBarTwo/AnimatedBarTwo';
 import AnimatedBarThree from '../components/AnimatedBars/AnimatedBarThree/AnimatedBarThree';
+import CompanyLogos from '../components/CompanyLogos/CompanyLogos';
+import InfoSection from '../components/InfoSection/InfoSection';
 import "./HomePage.css";
 
 export default function HomePage() {
@@ -20,6 +22,7 @@ export default function HomePage() {
         <div className='mainWrapper'>
             <Header />
             <Hero />
+            <CompanyLogos/>
             <ContentSwitcher sections={sections} />
 
             <div className="sections-container">     
@@ -41,7 +44,7 @@ export default function HomePage() {
                     />
                 ))}
             </div>
-
+<InfoSection/>
             <Footer />
         </div>
     );
