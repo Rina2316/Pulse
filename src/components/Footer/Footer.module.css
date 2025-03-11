@@ -113,3 +113,21 @@
   font-weight: bold;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 769px) {
+  .footerWrapper {
+    flex-direction: column;
+    justify-content: center;
+    padding:0rem;
+  }
+
+  .footerLogo {
+    font-size: 3rem;
+    position: static;
+   margin: 0 auto;
+  }
+
+  .footerSlogan {
+display: none;
+  }
+}

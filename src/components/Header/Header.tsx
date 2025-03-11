@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Header.css";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
 export default function Header() {
   const [dropdownOpen, setDropdownOpen] = useState<string | null>(null);
@@ -60,6 +61,7 @@ export default function Header() {
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
+         <BurgerMenu className="menu-burger"/>
         <div className="logo">Pulse</div>
         <nav ref={menuRef}>
           <ul className="menu">

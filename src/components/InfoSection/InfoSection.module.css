@@ -6,6 +6,7 @@
     padding: 6rem 0 5rem 9.4rem;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 
@@ -70,3 +71,31 @@
     z-index: 0;
     opacity: 0.9;
 }
+
+@media (max-width: 769px) {
+    .info-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 0;
+    }
+    
+  
+    .stats {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+.title {
+    font-size: 2rem;
+    line-height: 2.5rem;}
+
+    .planet-container {
+      display: block;
+      position: absolute;
+      bottom: 0rem;
+      right: 1rem;
+      transform: scale(1.1);
+      z-index: 0;
+      opacity: 0.9;
+    }
+  }

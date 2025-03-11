@@ -1,0 +1,105 @@
+@media (min-width: 769px) {
+    .burgerButton,
+    .menuContainer {
+      display: none;
+    }
+  }
+  
+  .burgerButton {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #7223bd;
+    z-index: 100;
+  }
+  
+  .menuContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    max-width: 19rem;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff7e5f, #8a2be2);
+    color: white;
+    z-index: 50;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .menuList {
+    list-style: none;
+    padding: 0;
+    margin: 5rem auto;
+  }
+  
+  .menuItem {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .submenuContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    max-width: 19rem;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff7e5f, #8a2be2);
+    color: white;
+    z-index: 60;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .backButton {
+    font-size: 18px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    margin-left: 10rem;
+  }
+  
+  .signUpButton {
+    background: white;
+    color: #8a2be2;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 2rem;
+    margin-right: 3rem;
+  }
+  
+  .signUpButton:hover {
+    background: #f0f0f0;
+  }
+  

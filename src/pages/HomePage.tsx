@@ -9,6 +9,7 @@ import AnimatedBarTwo from '../components/AnimatedBars/AnimatedBarTwo/AnimatedBa
 import AnimatedBarThree from '../components/AnimatedBars/AnimatedBarThree/AnimatedBarThree';
 import CompanyLogos from '../components/CompanyLogos/CompanyLogos';
 import InfoSection from '../components/InfoSection/InfoSection';
+import "../styles/global.css";
 
 export default function HomePage() {
     const sections = useMemo(() => [

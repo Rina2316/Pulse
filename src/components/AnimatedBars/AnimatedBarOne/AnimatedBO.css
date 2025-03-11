@@ -63,3 +63,13 @@
       stroke-width: 8;
     }
   }
+
+  @media (max-width: 768px) {
+    .curved-container,
+    .square-1,
+    .square-2,
+    .line {
+      display: none;
+    }
+  }
+  
