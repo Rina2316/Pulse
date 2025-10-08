@@ -8,13 +8,13 @@ const AnimatedBarOne: React.FC = () => {
   const pathAnimation = useMemo(() => ({
     initial: { pathLength: 0 },
     animate: { pathLength: 1 },
-    transition: { duration: 1.2, ease: "easeOut" }, // Уменьшил время анимации
+    transition: { duration: 1.2, ease: "easeOut" }, 
   }), []);
 
   const scaleAnimation = useMemo(() => ({
     initial: { scale: 0 },
     animate: { scale: 1 },
-    transition: { duration: 0.5, ease: "easeOut" }, // Ускорил появление
+    transition: { duration: 0.5, ease: "easeOut" }, 
   }), []);
 
   return (
@@ -55,11 +55,11 @@ const AnimatedBarOne: React.FC = () => {
       </motion.svg>
 
       <motion.div className="square square-1" {...scaleAnimation}>
-        <img src="/icons/blockcheain.jpg" alt="Blockchain" width={200} height={200} />
+        <img src={`${process.env.PUBLIC_URL}/icons/blockcheain.jpg`} alt="Blockchain" width={200} height={200} />
       </motion.div>
 
       <motion.div className="square square-2" {...scaleAnimation}>
-        <img src="/icons/card.jpg" alt="Card" width={200} height={200} />
+        <img src={`${process.env.PUBLIC_URL}/icons/card.jpg`} alt="Card" width={200} height={200} />
       </motion.div>
     </div>
   );

@@ -1,14 +1,14 @@
 import styles from "./CompanyLogos.module.css";
 
 const logos = [
-  { src: "/icons/1.png", alt: "OpenAI" },
-  { src: "/icons/2.png", alt: "Amazon" },
-  { src: "/icons/3.png", alt: "Google" },
-  { src: "/icons/4.png", alt: "Anthropic" },
-  { src: "/icons/5.png", alt: "Marriott" },
-  { src: "/icons/6.png", alt: "Shopify" },
-  { src: "/icons/7.png", alt: "Airbnb" },
-  { src: "/icons/8.png", alt: "URBN" },
+  { src: `${process.env.PUBLIC_URL}/icons/1.png`, alt: "OpenAI" },
+  { src: `${process.env.PUBLIC_URL}/icons/2.png`, alt: "Amazon" },
+  { src: `${process.env.PUBLIC_URL}/icons/3.png`, alt: "Google" },
+  { src: `${process.env.PUBLIC_URL}/icons/4.png`, alt: "Anthropic" },
+  { src: `${process.env.PUBLIC_URL}/icons/5.png`, alt: "Marriott" },
+  { src: `${process.env.PUBLIC_URL}/icons/6.png`, alt: "Shopify" },
+  { src: `${process.env.PUBLIC_URL}/icons/7.png`, alt: "Airbnb" },
+  { src: `${process.env.PUBLIC_URL}/icons/8.png`, alt: "URBN" },
 ];
 
 export default function CompanyLogos() {

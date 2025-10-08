@@ -50,7 +50,7 @@ export default function Hero() {
           </motion.button>
         </motion.div>
         <div className="hero-image-container">
-          <img src="/icons/HeroFoto.png" alt="Hero" className="hero-image" />
+          <img src={`${process.env.PUBLIC_URL}/icons/HeroFoto.png`} alt="Hero" className="hero-image" />
         </div>
       </div>
     </section>

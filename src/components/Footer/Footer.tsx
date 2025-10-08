@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
-import styles from "./Footer.module.css"; // Импортируем как объект
+import styles from "./Footer.module.css"; 
 
 export default function Footer() {
   const fadeInAnimation = useMemo(() => ({

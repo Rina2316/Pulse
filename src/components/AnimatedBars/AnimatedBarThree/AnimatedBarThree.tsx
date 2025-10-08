@@ -111,7 +111,7 @@ const AnimatedBarThree: React.FC = () => {
           ease: "easeInOut",
         }}
       >
-                <img src="/icons/comunity.jpg"   alt="Card" width={200} height={200} />
+                <img src={`${process.env.PUBLIC_URL}/icons/comunity.jpg`}   alt="Card" width={200} height={200} />
       </motion.div>
     </div>
   );

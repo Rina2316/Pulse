@@ -8,13 +8,13 @@ const AnimatedBarTwo: React.FC = () => {
   const pathAnimation = useMemo(() => ({
     initial: { pathLength: 0 },
     animate: { pathLength: 1 },
-    transition: { duration: 1.2, ease: "easeOut" }, // Уменьшил время анимации
+    transition: { duration: 1.2, ease: "easeOut" }, 
   }), []);
 
   const scaleAnimation = useMemo(() => ({
     initial: { scale: 0 },
     animate: { scale: 1 },
-    transition: { duration: 0.5, ease: "easeOut" }, // Ускорил появление
+    transition: { duration: 0.5, ease: "easeOut" }, 
   }), []);
 
   return (
@@ -55,7 +55,7 @@ const AnimatedBarTwo: React.FC = () => {
       </motion.svg>
 
       <motion.div className={styles.square} {...scaleAnimation}>
-        <img src="/icons/graphic.jpg" alt="Card" width={200} height={200} />
+        <img src={`${process.env.PUBLIC_URL}/icons/graphic.jpg`} alt="Card" width={200} height={200} />
       </motion.div>
     </div>
   );
